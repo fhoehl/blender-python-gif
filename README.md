@@ -1,6 +1,8 @@
 # Making gifs with Blender
 
-Blender is a great 3D creation tool with many features. Modelling, sculpting,
+<img src="animation.gif" width="400px" />
+
+(Blender)[https://www.blender.org] is a great 3D creation tool with many features. Modelling, sculpting,
 animation, compositing, scripting… It’s like a treasure chest with many toys
 in it.
 
