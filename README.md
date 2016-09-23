@@ -29,8 +29,7 @@ will make it easier to call Blender from the terminal. Here is a one liner to
 execute in the terminal to do it:
 
 ```bash
-echo 'alias blender="/Applications/blender.app/Contents/MacOS/blender"' >>
-.bashrc
+echo 'alias blender="/Applications/blender.app/Contents/MacOS/blender"' >> .bashrc
 ```
 
 Blender has a lot of options available when running it from the terminal. Have
@@ -59,8 +58,8 @@ render 1 frame. Point your terminal to folder with your `scene.blend` and
 `scene.py`.
 
 ```bash
-cd myblendergif blender --background scene.blend --python scene.py
---render-output botimage --render-frame 1
+cd myblendergif
+blender --background scene.blend --python scene.py --render-output botimage --render-frame 1
 ```
 
 You should see the `Hello!` message in the terminal and have a
@@ -209,8 +208,7 @@ Now we can use the `--frame-start` and `--frame-end` with the `--render-anim`
 option when using Blender via the terminal:
 
 ```bash
-blender --background scene.blend --python scene.py --render-output
-botimage --frame-start 1 --frame-end 12 --render-anim
+blender --background scene.blend --python scene.py --render-output botimage --frame-start 1 --frame-end 12 --render-anim
 ```
 
 We will get 12 images in total! But they are all the same!
@@ -279,12 +277,12 @@ gm convert -delay 20 -loop 0 botimage*.png animation.gif
 
 Open and enjoy your `animation.gif`!
 
-<img src="images/animation.gif" width="100%" />
+<img src="images/animation.gif" width="50%" />
 
 Have a look at my [final version](scene.py) of the code! Hope it will inspire
 you to make some nice gifs! Don’t forget to [tweet them at me](https://twitter.com/fhoehl) 😎!
 
-<img src="animation.gif" width="100%" />
+<img src="animation.gif" width="400px" />
 
 # Optional: How can I use Python modules in Blender?
 
